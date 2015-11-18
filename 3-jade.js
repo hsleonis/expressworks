@@ -8,7 +8,6 @@ app.set('views', path.join(__dirname, 'templates'));
 app.set('view engine', 'jade');
 
 app.get('/home', function(req, res) {
-    //app.use(express.static(file || path.join(__dirname, 'public')));
     res.render('index', {date: new Date().toDateString()});
 });
 
